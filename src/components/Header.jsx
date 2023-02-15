@@ -9,21 +9,22 @@ const navigation = [
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isMenuWhite, setMenuWhite] = useState(false);
 
+  // Clases tailwind
+  const navEstilos1 = "font-roboto text-base font-bold text-[#0000FF]";
+  const navEstilos2 = "font-roboto text-base font-bold text-white";
   useEffect(() => {
-    function handleScroll() {
+    // Funcion Flecha
+    const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      // console.log(scrollTop);
+      console.log(scrollTop);
       if (scrollTop > 100) {
         // cambia 100 por el número de píxeles que desees
         setMenuOpen(true);
-        setMenuWhite(true);
       } else {
         setMenuOpen(false);
-        setMenuWhite(false);
       }
-    }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -32,8 +33,10 @@ const Header = () => {
 
   return (
     <header
-      className={`menu fixed top-0 left-0 right-0 z-50 p-4 ${
-        isMenuOpen ? "bg-white shadow-lg" : "bg-transparent"
+      className={`${
+        isMenuOpen
+          ? "fixed bg-white shadow-lg w-full z-50 text-white"
+          : "absolute bg-transparent w-full z-50"
       } transition duration-500 ease-in-out`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
@@ -56,7 +59,8 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-[#0000FF] hover:text-indigo-50 before:"
+                // className="text-base font-medium text-[#0000FF] hover:text-indigo-50"
+                className={`${isMenuOpen ? navEstilos1 : navEstilos2}`}
               >
                 {link.name}
               </a>
@@ -64,7 +68,7 @@ const Header = () => {
           </div>
           {/* ESTE ES LA PARTE DEL TELEFONO */}
           <div>
-            <p className="text-base font-medium text-[#0000FF] hover:text-indigo-50">
+            <p className={`${isMenuOpen ? navEstilos1 : navEstilos2}`}>
               Telefono
             </p>
           </div>

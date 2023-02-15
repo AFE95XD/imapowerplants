@@ -8,18 +8,34 @@ const navigation = [
 ];
 
 const Header = () => {
-  const [small, setSmall] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMenuWhite, setMenuWhite] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setSmall(window.pageYOffset > 200)
-      );
+    function handleScroll() {
+      const scrollTop = window.pageYOffset;
+      // console.log(scrollTop);
+      if (scrollTop > 100) {
+        // cambia 100 por el número de píxeles que desees
+        setMenuOpen(true);
+        setMenuWhite(true);
+      } else {
+        setMenuOpen(false);
+        setMenuWhite(false);
+      }
     }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
-    <header className={`bg-transparent z-50 w-full ${small ? "small" : ""}`}>
+    <header
+      className={`menu fixed top-0 left-0 right-0 z-50 p-4 ${
+        isMenuOpen ? "bg-white shadow-lg" : "bg-transparent"
+      } transition duration-500 ease-in-out`}
+    >
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
         {/* MENU NORMAL */}
         <div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">

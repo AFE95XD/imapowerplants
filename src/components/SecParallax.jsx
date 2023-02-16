@@ -6,7 +6,7 @@ const SecParallax = () => {
           Welcome to my site!
         </div> */}
       </header>
-      <div className="max-w-lg m-auto">
+      {/* <div className="max-w-lg m-auto">
         <p className="mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           placerat a magna non varius. Proin leo felis, euismod non porta eget,
@@ -68,7 +68,7 @@ const SecParallax = () => {
           sollicitudin venenatis dolor, vitae scelerisque elit ultrices eu.
           Donec eget sodales risus, quis dignissim neque.
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

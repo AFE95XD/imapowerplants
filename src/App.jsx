@@ -1,3 +1,4 @@
+import CardsP from "./components/cards_p";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -9,10 +10,11 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Hero />
-      <SecCardsInfo />
-      <SecInfo1 /> */}
       <SecParallax />
+      {/* <Hero /> */}
+      <SecCardsInfo />
+      {/* <CardsP /> */}
+      <SecInfo1 />
       <Footer />
     </>
   );

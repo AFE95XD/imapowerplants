@@ -1,14 +1,20 @@
 const SecParallax = () => {
   return (
     <>
-      <section className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('https://wordpress.imapowerplants.com/wp-content/uploads/2021/09/IMA_home_slider3.jpg')]">
+      <section className="flex items-center justify-start h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('https://wordpress.imapowerplants.com/wp-content/uploads/2021/09/IMA_home_slider3.jpg')]">
         <div
-          className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
+          className="p-10 text-2xl text-white bg-[#0000FF] bg-opacity-80 rounded-xl text-center w-2/4 ml-20"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          Welcome to my site!
+          <h3 className="px-3 mb-4 tracking-wider uppercase rounded-full font-barlow text-3xl font-bold">
+            Especialistas en Ingeniería de Proyectos de Energía.
+          </h3>
+          <p className="mt-5 font-roboto font-normal text-base">
+            Impulsando el desarrollo industrial de México a través de la energía
+            y el conocimiento de la ingeniería.
+          </p>
         </div>
       </section>
       {/* <div className="max-w-lg m-auto">

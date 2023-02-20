@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Loader from "./components/Loader";
 import SecCardsInfo from "./components/SecCardsInfo";
+import SecContacto from "./components/SecContacto";
 import SecInfo1 from "./components/SecInfo1";
 import SecParallax from "./components/SecParallax";
 
@@ -36,6 +37,7 @@ function App() {
           <SecParallax />
           <SecCardsInfo />
           <SecInfo1 />
+          <SecContacto />
           <Footer />
         </>
       )}

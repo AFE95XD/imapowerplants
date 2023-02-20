@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 const navigation = [
-  { name: "Solutions", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Docs", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Inicio", href: "#" },
+  { name: "Soluciones", href: "#" },
+  { name: "Areas", href: "#" },
+  { name: "Contacto", href: "#" },
 ];
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
     // Funcion Flecha
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      console.log(scrollTop);
+      // console.log(scrollTop);
       if (scrollTop > 100) {
         // cambia 100 por el número de píxeles que desees
         setMenuOpen(true);
@@ -36,7 +36,7 @@ const Header = () => {
       className={`${
         isMenuOpen
           ? "fixed bg-white shadow-lg w-full z-50 text-white"
-          : "absolute bg-transparent w-full z-50"
+          : "absolute bg-transparent w-full z-50 border-b-2 border-[#ffffff38]"
       } transition duration-500 ease-in-out`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">

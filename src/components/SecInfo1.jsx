@@ -3,7 +3,12 @@ import React from "react";
 const SecInfo1 = () => {
   return (
     <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div
+        className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div>
           <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
             Otras Áreas de Negocio
@@ -43,52 +48,56 @@ const SecInfo1 = () => {
           Proyecto.
         </p>
       </div>
-      <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+      <div
+        className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto"
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div className="grid grid-cols-2 gap-5">
           <img
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="src/assets/img/carrousel/usar7.jpg"
             alt=""
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="src/assets/img/carrousel/usar8.jpg"
             alt=""
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="src/assets/img/carrousel/usar3.jpg"
             alt=""
           />
         </div>
         <div className="flex flex-col justify-center">
           <div className="pb-4 mb-4 border-b">
             <h6 className="mb-2 font-semibold leading-5">
-              Sit error voluptatem accusantium
+              Planta de Alimentos
             </h6>
             <p className="text-sm text-gray-900">
-              Sportacus andrew weatherall goose Refined gentlemen super mario
-              des lynam alpha trion zap rowsdower, omar sharif old.
+              Desde modernización de instalaciones e incremento de capacidad
+              productiva hasta construcción parcial o total de plantas de
+              alimentos.
             </p>
           </div>
           <div className="pb-4 mb-4 border-b">
-            <h6 className="mb-2 font-semibold leading-5">
-              Cheese on toast airedale the big cheese
-            </h6>
+            <h6 className="mb-2 font-semibold leading-5">Mantenimiento</h6>
             <p className="text-sm text-gray-900">
-              Chase ball of string eat plants, meow, and throw up because I ate
-              plants going to catch the red dot today going to catch the red dot
-              today. I could pee on this if I had the energy.
+              Brindamos mantenimiento a motores de gas natural o Diésel,
+              subestaciones eléctricas en media tensión y suministramos químicos
+              a calderas de vapor. También vendemos refaccionamiento.
             </p>
           </div>
           <div>
             <h6 className="mb-2 font-semibold leading-5">
-              A flower in my garden, a mystery
+              Tratamiento de Calderas
             </h6>
             <p className="text-sm text-gray-900">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae doloremque laudantium.
+              Ofrecemos Tratamiento Químico del Agua de Alimentación o Caldera
+              para Evitar Incrustaciones y Corrosión en los Internos de su
+              Generador de Vapor
             </p>
           </div>
         </div>

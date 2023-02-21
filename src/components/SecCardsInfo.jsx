@@ -37,7 +37,12 @@ const SecCardsInfo = () => {
   return (
     <section className="bg-contain bg-center h-auto bg-[url('src/assets/img/map.png')]">
       <div className="mx-auto max-w-7xl px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8 text-center py-32">
-        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div
+          className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
             Realizamos Proyectos Eficientes
           </p>
@@ -47,7 +52,12 @@ const SecCardsInfo = () => {
           </h2>
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+        <div
+          className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           {/* CARD */}
           {cards.map((card) => (
             <div

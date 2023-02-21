@@ -1,9 +1,9 @@
 const SecParallax = () => {
   return (
     <>
-      <section className="flex items-center justify-start h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('https://wordpress.imapowerplants.com/wp-content/uploads/2021/09/IMA_home_slider3.jpg')]">
+      <section className="flex items-center justify-center lg:justify-start h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('https://wordpress.imapowerplants.com/wp-content/uploads/2021/09/IMA_home_slider3.jpg')]">
         <div
-          className="p-10 text-2xl text-white bg-[#0000FF] bg-opacity-80 rounded-xl text-center w-2/4 ml-20"
+          className="w-4/5 p-10 lg:text-2xl text-white bg-[#0000FF] lg:bg-opacity-80 rounded-xl text-center lg:w-2/4 lg:ml-20"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"

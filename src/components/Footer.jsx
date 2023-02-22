@@ -1,6 +1,12 @@
 const Footer = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-100">
+    <footer
+      aria-label="Site Footer"
+      className="bg-gray-100"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
           <img
@@ -78,7 +84,7 @@ const Footer = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a
               href="/"
               rel="noreferrer"
@@ -99,7 +105,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-          </li>
+          </li> */}
 
           <li>
             <a

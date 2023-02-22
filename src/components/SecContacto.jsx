@@ -3,14 +3,33 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 const SecContacto = () => {
   return (
     <>
-      <section className="bg-gray-100">
+      <section className="bg-gray-100" id="sec3">
         <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
-          <div className="relative bg-white shadow-xl">
-            <h2 className="sr-only">Contact us</h2>
+          <div
+            className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
+              Contactanos
+            </p>
+            <h2 className="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-[#1b1a1a] sm:text-4xl md:mx-auto font-barlow">
+              Nuestro compromiso es asesorar oportunamente.
+            </h2>
+          </div>
 
+          {/* INFO CONTACTO */}
+          <div
+            className="relative bg-white shadow-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <h2 className="sr-only">Contacto</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Contact information */}
-              <div className="relative overflow-hidden bg-indigo-700 py-10 px-6 sm:px-10 xl:p-12">
+              <div className="relative overflow-hidden bg-[#0000ff] py-10 px-6 sm:px-10 xl:p-12">
                 <div
                   className="pointer-events-none absolute inset-0 sm:hidden"
                   aria-hidden="true"
@@ -108,22 +127,23 @@ const SecContacto = () => {
                   </svg>
                 </div>
                 <h3 className="text-lg font-medium text-white">
-                  Contact information
+                  Información de contacto
                 </h3>
                 <p className="mt-6 max-w-3xl text-base text-indigo-50">
-                  Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                  volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                  Estamos listos para conocer los detalles del proyecto que
+                  tenga en mente. Puede enviarnos un correo o un mensaje directo
+                  rellenado el formulario de contacto.
                 </p>
                 <dl className="mt-8 space-y-6">
                   <dt>
-                    <span className="sr-only">Phone number</span>
+                    <span className="sr-only">Número de teléfono</span>
                   </dt>
                   <dd className="flex text-base text-indigo-50">
                     <PhoneIcon
                       className="h-6 w-6 flex-shrink-0 text-indigo-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">+1 (555) 123-4567</span>
+                    <span className="ml-3">(+52 1) 55-3717-1132</span>
                   </dd>
                   <dt>
                     <span className="sr-only">Email</span>
@@ -133,7 +153,9 @@ const SecContacto = () => {
                       className="h-6 w-6 flex-shrink-0 text-indigo-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">support@workcation.com</span>
+                    <span className="ml-3">
+                      mechanical.engineers@imapowerplants.com
+                    </span>
                   </dd>
                 </dl>
                 <ul role="list" className="mt-8 flex space-x-12">
@@ -153,27 +175,6 @@ const SecContacto = () => {
                       >
                         <path
                           d="M22.258 1H2.242C1.556 1 1 1.556 1 2.242v20.016c0 .686.556 1.242 1.242 1.242h10.776v-8.713h-2.932V11.39h2.932V8.887c0-2.906 1.775-4.489 4.367-4.489 1.242 0 2.31.093 2.62.134v3.037l-1.797.001c-1.41 0-1.683.67-1.683 1.653v2.168h3.362l-.438 3.396h-2.924V23.5h5.733c.686 0 1.242-.556 1.242-1.242V2.242C23.5 1.556 22.944 1 22.258 1"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-indigo-200 hover:text-indigo-100"
-                      href="#"
-                    >
-                      <span className="sr-only">GitHub</span>
-                      <svg
-                        width={24}
-                        height={24}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        className="h-6 w-6"
-                        aria-hidden="true"
-                      >
-                        <path
-                          d="M11.999 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.386.6.11.819-.26.819-.578 0-.284-.01-1.04-.017-2.04-3.337.724-4.042-1.61-4.042-1.61-.545-1.386-1.332-1.755-1.332-1.755-1.09-.744.082-.73.082-.73 1.205.086 1.838 1.238 1.838 1.238 1.07 1.833 2.81 1.304 3.493.996.109-.775.419-1.303.762-1.603C7.145 17 4.343 15.97 4.343 11.373c0-1.31.468-2.382 1.236-3.22-.124-.304-.536-1.524.118-3.176 0 0 1.007-.323 3.3 1.23.956-.266 1.983-.4 3.003-.404 1.02.005 2.046.138 3.005.404 2.29-1.553 3.296-1.23 3.296-1.23.655 1.652.243 2.872.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.624-5.478 5.921.43.37.814 1.103.814 2.223 0 1.603-.015 2.898-.015 3.291 0 .321.217.695.825.578C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12.001-12"
                           fill="currentColor"
                         />
                       </svg>
@@ -206,7 +207,7 @@ const SecContacto = () => {
               {/* Contact form */}
               <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                 <h3 className="text-lg font-medium text-gray-900">
-                  Send us a message
+                  Envíanos un mensaje
                 </h3>
                 <form
                   action="#"
@@ -218,7 +219,7 @@ const SecContacto = () => {
                       htmlFor="first-name"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      First name
+                      Nombre (s)
                     </label>
                     <div className="mt-1">
                       <input
@@ -226,7 +227,7 @@ const SecContacto = () => {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                       />
                     </div>
                   </div>
@@ -235,7 +236,7 @@ const SecContacto = () => {
                       htmlFor="last-name"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      Last name
+                      Apellidos
                     </label>
                     <div className="mt-1">
                       <input
@@ -243,7 +244,7 @@ const SecContacto = () => {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                       />
                     </div>
                   </div>
@@ -260,7 +261,7 @@ const SecContacto = () => {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                       />
                     </div>
                   </div>
@@ -270,13 +271,13 @@ const SecContacto = () => {
                         htmlFor="phone"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Phone
+                        Teléfono
                       </label>
                       <span
                         id="phone-optional"
                         className="text-sm text-gray-500"
                       >
-                        Optional
+                        Opcional
                       </span>
                     </div>
                     <div className="mt-1">
@@ -285,17 +286,17 @@ const SecContacto = () => {
                         name="phone"
                         id="phone"
                         autoComplete="tel"
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                         aria-describedby="phone-optional"
                       />
                     </div>
                   </div>
-                  <div className="sm:col-span-2">
+                  {/* <div className="sm:col-span-2">
                     <label
                       htmlFor="subject"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      Subject
+                      
                     </label>
                     <div className="mt-1">
                       <input
@@ -305,17 +306,17 @@ const SecContacto = () => {
                         className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                       />
                     </div>
-                  </div>
+                  </div> */}
                   <div className="sm:col-span-2">
                     <div className="flex justify-between">
                       <label
                         htmlFor="message"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Message
+                        Mensaje
                       </label>
                       <span id="message-max" className="text-sm text-gray-500">
-                        Max. 500 characters
+                        Max. 500 characteres
                       </span>
                     </div>
                     <div className="mt-1">
@@ -323,7 +324,7 @@ const SecContacto = () => {
                         id="message"
                         name="message"
                         rows={4}
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                         aria-describedby="message-max"
                         defaultValue={""}
                       />
@@ -332,9 +333,9 @@ const SecContacto = () => {
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
-                      className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                      className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[#0000ff] focus:outline-none focus:ring-2 focus:ring-[#0000ff] focus:ring-offset-2 sm:w-auto"
                     >
-                      Submit
+                      Enviar
                     </button>
                   </div>
                 </form>

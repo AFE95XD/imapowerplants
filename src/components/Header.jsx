@@ -2,10 +2,10 @@ import { PhoneIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 
 const navigation = [
-  { name: "Inicio", href: "#" },
-  { name: "Soluciones", href: "#" },
-  { name: "Areas", href: "#" },
-  { name: "Contacto", href: "#" },
+  { name: "Inicio", href: "#sec0" },
+  { name: "Soluciones", href: "#sec1" },
+  { name: "Areas", href: "#sec2" },
+  { name: "Contacto", href: "#sec3" },
 ];
 
 const Header = () => {
@@ -45,13 +45,18 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center py-6 px-5">
         {/* ::Site logo and Name */}
         <a
-          href="#link"
+          href="/"
           className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
         >
           <span className="sr-only">Your Company</span>
           <img
             className="h-11 w-auto"
-            src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
+            // src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
+            src={
+              isMenuOpen
+                ? "src/assets/img/IMA_logo.png"
+                : "src/assets/img/IMA_blanco.png"
+            }
             alt="IMA_logo"
           />
         </a>
@@ -62,7 +67,11 @@ const Header = () => {
               key={link.name}
               href={link.href}
               // className="text-base font-medium text-[#0000FF] hover:text-indigo-50"
-              className={`mr-8 ${isMenuOpen ? navEstilos1 : navEstilos2}`}
+              className={`mr-8 ${
+                isMenuOpen ? navEstilos1 : navEstilos2
+              } relative after:absolute ${
+                isMenuOpen ? "after:bg-[#0000ff]" : "after:bg-gray-200"
+              } after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300`}
             >
               {link.name}
             </a>
@@ -76,7 +85,7 @@ const Header = () => {
                 isMenuOpen ? navEstilos1 : navEstilos2
               } flex items-center content-center`}
             >
-              <span className="w-8 h-8">{<PhoneIcon />}</span>
+              <span className="w-6 h-6">{<PhoneIcon />}</span>
               <span className="pl-3">(+52 1) 55-3717-1132</span>
             </p>
           </div>
@@ -108,7 +117,7 @@ const Header = () => {
         <div className="w-full flex flex-col py-4 px-3 md:hidden bg-gray-50 text-base uppercase text-center font-semibold">
           {navigation.map((link) => (
             <a
-              href="#"
+              href={link.href}
               className={`block px-3 py-2 rounded-md hover:text-white hover:bg-[#0000FF] ${
                 isMenuOpen ? navEstilos1 : navEstilos1
               }`}

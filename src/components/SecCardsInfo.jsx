@@ -35,11 +35,14 @@ const SecCardsInfo = () => {
     return random + fecha;
   };
   return (
-    <section className="bg-contain bg-center h-auto bg-[url('src/assets/img/map.png')]">
+    <section
+      className="bg-contain bg-center h-auto bg-[url('src/assets/img/map.png')]"
+      id="sec1"
+    >
       <div className="mx-auto max-w-7xl px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8 text-center py-32">
         <div
           className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
@@ -47,7 +50,7 @@ const SecCardsInfo = () => {
             Realizamos Proyectos Eficientes
           </p>
           <h2 className="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-[#1b1a1a] sm:text-4xl md:mx-auto font-barlow">
-            Soluciones Rápidas, Inteligentes y Excelentes para hacer crecer su
+            Soluciones rápidas, inteligentes y excelentes para hacer crecer su
             negocio.
           </h2>
         </div>

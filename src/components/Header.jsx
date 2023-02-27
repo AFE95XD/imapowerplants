@@ -1,5 +1,5 @@
-import { PhoneIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
+import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Inicio", href: "#sec0" },
@@ -20,7 +20,7 @@ const Header = () => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
       // console.log(scrollTop);
-      if (scrollTop > 100) {
+      if (scrollTop > 200) {
         // cambia 100 por el número de píxeles que desees
         setMenuOpen(true);
       } else {
@@ -41,21 +41,48 @@ const Header = () => {
           : "absolute bg-transparent w-full z-50 border-b-2 border-[#ffffff38]"
       } transition duration-500 ease-in-out`}
     >
+      {/* BANNER */}
+      <div className={`${isMenuOpen ? "bg-[#0000FF]" : ""}`}>
+        <div className="container mx-auto gap-4 items-center py-1 px-5 hidden md:flex">
+          <p className="font-medium text-white flex">
+            <span className="w-6 h-6">{<PhoneIcon />}</span>
+            <span className="pl-3">(+52 1) 55-3717-1132</span>
+          </p>
+          <p className="font-medium text-white hidden lg:flex">
+            <span className="w-6 h-6">{<PhoneIcon />}</span>
+            <span className="pl-3">(+52 1) 55-3717-1132</span>
+          </p>
+          <p className="font-medium text-white hidden lg:flex">
+            <span className="w-6 h-6">{<PhoneIcon />}</span>
+            <span className="pl-3">(+52 1) 55-3717-1132</span>
+          </p>
+          <p className="font-medium text-white flex">
+            <EnvelopeIcon
+              className="h-6 w-6 flex-shrink-0"
+              aria-hidden="true"
+            />
+            <span className="ml-3">
+              mechanical.engineers@imapowerplants.com
+            </span>
+          </p>
+        </div>
+      </div>
+
       {/* :DESKTOP MENU */}
-      <div className="container mx-auto flex justify-between items-center py-6 px-5">
+      <div className="container mx-auto flex justify-between items-center px-5">
         {/* ::Site logo and Name */}
         <a
           href="/"
           className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
         >
-          <span className="sr-only">Your Company</span>
+          <span className="sr-only">IMA inc Mechanical Engineers</span>
           <img
-            className="h-11 w-auto"
+            className="h-16 w-auto"
             // src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
             src={
               isMenuOpen
-                ? "src/assets/img/IMA_logo.png"
-                : "src/assets/img/IMA_blanco.png"
+                ? "src/assets/img/logo_IMA2.png"
+                : "src/assets/img/logo_IMA1.png"
             }
             alt="IMA_logo"
           />
@@ -78,7 +105,7 @@ const Header = () => {
           ))}
         </nav>
         {/* ::Telefono */}
-        <div className="hidden sm:inline-flex ml-auto md:ml-0 mr-4 md:mr-0 cursor-pointer">
+        {/* <div className="hidden sm:inline-flex ml-auto md:ml-0 mr-4 md:mr-0 cursor-pointer">
           <div>
             <p
               className={`${
@@ -89,7 +116,7 @@ const Header = () => {
               <span className="pl-3">(+52 1) 55-3717-1132</span>
             </p>
           </div>
-        </div>
+        </div> */}
         {/* ::Burger icon standard */}
         <button
           className="md:hidden rounded-md active:outline-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0000FF]"
@@ -97,7 +124,7 @@ const Header = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 rounded-md text-gray-500 bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-[#0000ff7c] hover:to-[#0000FF7c]"
+            className="h-8 w-8 rounded-md text-white bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-[#0000ff7c] hover:to-[#0000FF7c]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -130,64 +157,18 @@ const Header = () => {
             <span className="w-8 h-8">{<PhoneIcon />}</span>
             <span className="pl-3">(+52 1) 55-3717-1132</span>
           </p>
+          <p className="px-3 py-2 rounded-md text-white bg-[#0000FF] mt-5 flex items-center justify-center text-center lowercase">
+            <EnvelopeIcon
+              className="h-8 w-8 flex-shrink-0"
+              aria-hidden="true"
+            />
+            <span className="pl-3">
+              mechanical.engineers@imapowerplants.com
+            </span>
+          </p>
         </div>
       )}
     </header>
-    // <header
-    //   className={`${
-    //     isMenuOpen
-    //       ? "fixed bg-white shadow-lg w-full z-50 text-white"
-    //       : "absolute bg-transparent w-full z-50 border-b-2 border-[#ffffff38]"
-    //   } transition duration-500 ease-in-out`}
-    // >
-    //   <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
-    //     {/* MENU NORMAL */}
-    //     <div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">
-    //       {/* ESTE ES LA IMAGEN */}
-    //       <div>
-    //         <a href="#">
-    //           <span className="sr-only">Your Company</span>
-    //           <img
-    //             className="h-10 w-auto"
-    //             src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
-    //             alt="IMA_logo"
-    //           />
-    //         </a>
-    //       </div>
-    //       {/* ESTE ES EL NAV */}
-    //       <div className="hidden space-x-8 lg:block">
-    //         {navigation.map((link) => (
-    //           <a
-    //             key={link.name}
-    //             href={link.href}
-    //             // className="text-base font-medium text-[#0000FF] hover:text-indigo-50"
-    //             className={`${isMenuOpen ? navEstilos1 : navEstilos2}`}
-    //           >
-    //             {link.name}
-    //           </a>
-    //         ))}
-    //       </div>
-    //       {/* ESTE ES LA PARTE DEL TELEFONO */}
-    //       <div>
-    //         <p className={`${isMenuOpen ? navEstilos1 : navEstilos2}`}>
-    //           Telefono
-    //         </p>
-    //       </div>
-    //     </div>
-    //     {/* PARTE DEL TELEFONBO */}
-    //     <div className="flex flex-wrap justify-center gap-x-6 py-4 lg:hidden">
-    //       {navigation.map((link) => (
-    //         <a
-    //           key={link.name}
-    //           href={link.href}
-    //           className="text-base font-medium text-white hover:text-indigo-50"
-    //         >
-    //           {link.name}
-    //         </a>
-    //       ))}
-    //     </div>
-    //   </nav>
-    // </header>
   );
 };
 

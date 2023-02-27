@@ -24,6 +24,12 @@ const cards = [
     descripcion:
       "Realizamos Estudios Eléctricos Especializados, Diagnósticos Energéticos e Ingeniería Básica de Proyectos Industriales.",
   },
+  {
+    // icono: <Mantenimiento />,
+    titulo: "Ingeniería de Proyectos",
+    descripcion:
+      "Realizamos Estudios Eléctricos Especializados, Diagnósticos Energéticos e Ingeniería Básica de Proyectos Industriales.",
+  },
 ];
 
 const SecCardsInfo = () => {
@@ -56,7 +62,7 @@ const SecCardsInfo = () => {
         </div>
 
         <div
-          className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2"
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -64,7 +70,7 @@ const SecCardsInfo = () => {
           {/* CARD */}
           {cards.map((card) => (
             <div
-              className="group relative w-80 h-96 mx-auto rounded-lg shadow-2xl bg-white transform hover:-translate-y-2 transition-all duration-300"
+              className="group relative w-3/4 h-96 mx-auto rounded-lg shadow-2xl bg-white transform hover:-translate-y-2 transition-all duration-300"
               key={generarId()}
             >
               <img

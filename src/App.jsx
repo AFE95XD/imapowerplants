@@ -8,17 +8,6 @@ import SecContacto from "./components/SecContacto";
 import SecInfo1 from "./components/SecInfo1";
 import SecParallax from "./components/SecParallax";
 
-function showLoader() {
-  try {
-    var loader = document.getElementById("loader");
-    if (loader) {
-      loader.style.display = "flex";
-    }
-  } catch (err) {
-    console.log("Error al mostrar el loader: " + err);
-  }
-}
-
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -34,10 +23,11 @@ function App() {
       ) : (
         <>
           <Header />
-          <SecParallax />
+          <Hero />
+          {/* <SecParallax /> */}
           <SecCardsInfo />
-          <SecInfo1 />
-          <SecContacto />
+          {/* <SecInfo1 />
+          <SecContacto /> */}
           <Footer />
         </>
       )}

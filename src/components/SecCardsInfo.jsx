@@ -62,7 +62,7 @@ const SecCardsInfo = () => {
         </div>
 
         <div
-          className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2"
+          className="mx-auto mt-12 grid max-w-lg gap-y-12 lg:max-w-none lg:grid-cols-2"
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="1500"

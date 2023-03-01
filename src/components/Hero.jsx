@@ -11,7 +11,7 @@ const Hero = () => {
         modules={[Navigation]}
         navigation={true}
         loop={true}
-        // autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 5000 }}
       >
         <SwiperSlide>
           <div className="relative flex justify-start items-center">

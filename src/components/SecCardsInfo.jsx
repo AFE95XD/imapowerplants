@@ -7,26 +7,26 @@ import Mantenimiento from "./svg/Mantenimiento";
 const cards = [
   {
     // icono: <Energia />,
-    titulo: "Energía",
+    titulo: "Ingeniería",
     descripcion:
       "Proyectos de cogeneración a base de motor de combustión interna, turbinas de gas y vapor. Garantizamos éxito y rendimiento energético.",
     // imagen: "src/"
   },
   {
     // icono: <FrabricaAlimentos />,
-    titulo: "Fabricación de Maquinaria",
+    titulo: "Plantas de Energía",
     descripcion:
       "Diseñamos, Proyectamos y Construimos Maquinaria Especializada para sus Procesos Productivos, como lo pueden ser Tolvas, Tanques, Calandretas, Recipientes a presión, entre los principales.",
   },
   {
     // icono: <Mantenimiento />,
-    titulo: "Ingeniería de Proyectos",
+    titulo: "Plantas Industriales",
     descripcion:
       "Realizamos Estudios Eléctricos Especializados, Diagnósticos Energéticos e Ingeniería Básica de Proyectos Industriales.",
   },
   {
     // icono: <Mantenimiento />,
-    titulo: "Ingeniería de Proyectos",
+    titulo: "Mantenimiento Industrial",
     descripcion:
       "Realizamos Estudios Eléctricos Especializados, Diagnósticos Energéticos e Ingeniería Básica de Proyectos Industriales.",
   },

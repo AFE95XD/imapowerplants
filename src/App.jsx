@@ -8,6 +8,9 @@ import SecContacto from "./components/SecContacto";
 import SecInfo1 from "./components/SecInfo1";
 import SecParallax from "./components/SecParallax";
 
+import SecSliderInfinito from "./components/SecSliderInfinito";
+import SecVideo from "./components/SecVideo";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -26,8 +29,10 @@ function App() {
           <Hero />
           {/* <SecParallax /> */}
           <SecCardsInfo />
-          {/* <SecInfo1 />
-          <SecContacto /> */}
+          <SecSliderInfinito />
+          <SecVideo />
+          {/* <SecInfo1 />*/}
+          <SecContacto />
           <Footer />
         </>
       )}

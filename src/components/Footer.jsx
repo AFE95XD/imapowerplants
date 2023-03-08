@@ -16,8 +16,9 @@ const Footer = () => {
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-          Impulsando el desarrollo industrial de México a través de la energía y
-          el conocimiento de la ingeniería.
+          En IMA Mechanical Engineers le ofrecemos solución a su Proyecto Bajo
+          la Modalidad Llave en Mano. Integramos todas las Ingenierías de
+          Proyecto.
         </p>
 
         <nav aria-label="Footer Nav" className="mt-12">

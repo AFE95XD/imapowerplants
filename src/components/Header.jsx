@@ -4,7 +4,7 @@ import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 const navigation = [
   { name: "Inicio", href: "#sec0" },
   { name: "Soluciones", href: "#sec1" },
-  { name: "Areas", href: "#sec2" },
+  // { name: "Areas", href: "#sec2" },
   { name: "Contacto", href: "#sec3" },
 ];
 
@@ -37,8 +37,8 @@ const Header = () => {
     <header
       className={`${
         isMenuOpen
-          ? "fixed bg-white shadow-lg w-full z-50 text-white"
-          : "absolute bg-transparent w-full z-50 border-b-2 border-[#ffffff38]"
+          ? "fixed bg-white shadow-lg w-full z-10 text-white"
+          : "absolute bg-transparent w-full z-10 border-b-2 border-[#ffffff38]"
       } transition duration-500 ease-in-out`}
     >
       {/* BANNER */}
@@ -104,20 +104,6 @@ const Header = () => {
             </a>
           ))}
         </nav>
-        {/* ::Telefono */}
-        {/* <div className="hidden sm:inline-flex ml-auto md:ml-0 mr-4 md:mr-0 cursor-pointer">
-          <div>
-            <p
-              className={`${
-                isMenuOpen ? navEstilos1 : navEstilos2
-              } flex items-center content-center`}
-            >
-              <span className="w-6 h-6">{<PhoneIcon />}</span>
-              <span className="pl-3">(+52 1) 55-3717-1132</span>
-            </p>
-          </div>
-        </div> */}
-        {/* ::Burger icon standard */}
         <button
           className="md:hidden rounded-md active:outline-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0000FF]"
           onClick={() => setIsOpen(!isOpen)}

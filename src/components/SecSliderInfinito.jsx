@@ -9,45 +9,14 @@ const SecSliderInfinito = () => {
         data-aos-easing="linear"
         data-aos-duration="1500"
       >
-        <div>
-          <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
-            Otras Áreas de Negocio
-          </p>
-        </div>
-        <h2 className="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-[#1b1a1a] sm:text-4xl md:mx-auto font-barlow">
-          <span className="relative inline-block">
-            <svg
-              viewBox="0 0 52 24"
-              fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-            >
-              <defs>
-                <pattern
-                  id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
-                  x="0"
-                  y="0"
-                  width=".135"
-                  height=".30"
-                >
-                  <circle cx="1" cy="1" r=".7" />
-                </pattern>
-              </defs>
-              <rect
-                fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
-                width="52"
-                height="24"
-              />
-            </svg>
-            <span className="relative">Gestión</span>
-          </span>{" "}
-          completa de proyectos.
-        </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-          En IMA Mechanical Engineers le ofrecemos solución a su Proyecto Bajo
-          la Modalidad Llave en Mano. Integramos todas las Ingenierías de
-          Proyecto.
+        <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
+          Clientes y Alianzas Estratégicas
         </p>
+        <h2 className="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-[#1b1a1a] sm:text-4xl md:mx-auto font-barlow">
+          ¡Conoce con quien hemos trabajado!
+        </h2>
       </div>
+      {/* SliderInf */}
       <div className="contenedor">
         <div className="slider">
           <div className="slide-track">

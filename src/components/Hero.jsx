@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -8,10 +8,10 @@ const Hero = () => {
     <>
       <Swiper
         tag="section"
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation={true}
         loop={true}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
       >
         <SwiperSlide>
           <div className="relative flex justify-start items-center">

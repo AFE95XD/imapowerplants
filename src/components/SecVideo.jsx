@@ -16,8 +16,8 @@ const SecVideo = () => {
               truffaut hexagon try-hard chambray.
             </p>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <video className="w-fit h-2/4 max-w-full" controls>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
+            <video className="w-fit h-[29rem] max-w-full" controls>
               <source src="src/assets/media/videoIMA.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>

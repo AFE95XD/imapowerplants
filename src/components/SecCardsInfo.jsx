@@ -5,7 +5,7 @@ import { SlEnergy } from "react-icons/sl";
 import { FaIndustry } from "react-icons/fa";
 import { GiAutoRepair } from "react-icons/gi";
 
-import Modal from "./svg/Modal";
+import Modal from "./extras/Modal";
 
 const cards = [
   {

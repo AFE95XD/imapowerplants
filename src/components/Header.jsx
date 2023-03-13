@@ -48,14 +48,14 @@ const Header = () => {
             <span className="w-6 h-6">{<PhoneIcon />}</span>
             <span className="pl-3">(+52 1) 55-3717-1132</span>
           </p>
-          <p className="font-medium text-white hidden lg:flex">
+          {/* <p className="font-medium text-white hidden lg:flex">
             <span className="w-6 h-6">{<PhoneIcon />}</span>
             <span className="pl-3">(+52 1) 55-3717-1132</span>
           </p>
           <p className="font-medium text-white hidden lg:flex">
             <span className="w-6 h-6">{<PhoneIcon />}</span>
             <span className="pl-3">(+52 1) 55-3717-1132</span>
-          </p>
+          </p> */}
           <p className="font-medium text-white flex">
             <EnvelopeIcon
               className="h-6 w-6 flex-shrink-0"

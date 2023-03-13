@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-const info = [
+const informacion = [
   // ingenieria:
   [
     {
@@ -98,6 +98,16 @@ const Modal = ({ setModalId, modalId }) => {
   if (!open) {
     setModalId(null);
   }
+  let x = [];
+  x = informacion[modalId - 1];
+
+  console.log(informacion);
+
+  const generarId = () => {
+    const random = Math.random().toString(36).substring(2);
+    const fecha = Date.now().toString(36);
+    return random + fecha;
+  };
   return (
     <>
       <Transition.Root show={open} as={Fragment}>
@@ -125,7 +135,7 @@ const Modal = ({ setModalId, modalId }) => {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative h-screen transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:p-6">
+                <Dialog.Panel className="relative h-screen transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-3/4 sm:p-6">
                   <div className="absolute top-0 right-0 hidden pt-4 pr-4 sm:block">
                     <button
                       type="button"
@@ -138,19 +148,32 @@ const Modal = ({ setModalId, modalId }) => {
                   </div>
                   <div className="sm:flex sm:items-start">
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      {/* {info[modalId].map((inf)=>())} */}
-                      <Dialog.Title
-                        as="h3"
-                        className="text-base font-semibold leading-6 text-gray-900"
-                      >
-                        Deactivate account
-                      </Dialog.Title>
-                      <div className="mt-2">
-                        <p className="text-sm text-gray-500">
-                          Are you sure you want to deactivate your account? All
-                          of your data will be permanently removed from our
-                          servers forever. This action cannot be undone.
-                        </p>
+                      <div className="flex flex-wrap">
+                        <div className="h-96 w-60 mr-11 lg:text-start sm:">
+                          <img
+                            src="src/assets/img/Fotografía IMA Mechanical.jpg"
+                            alt="imgDif"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div>
+                          {x &&
+                            x.map((info) => (
+                              <div key={generarId()}>
+                                <Dialog.Title
+                                  as="h3"
+                                  className="text-base font-semibold leading-6 text-gray-900"
+                                >
+                                  {info.titulo}
+                                </Dialog.Title>
+                                <div className="mt-2">
+                                  <p className="text-sm text-gray-500">
+                                    {info.descipcion}
+                                  </p>
+                                </div>
+                              </div>
+                            ))}
+                        </div>
                       </div>
                     </div>
                   </div>

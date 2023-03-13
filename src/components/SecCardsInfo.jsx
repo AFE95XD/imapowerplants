@@ -66,11 +66,16 @@ const SecCardsInfo = () => {
       >
         <div className="mx-auto max-w-7xl px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8 text-center py-32">
           <div
-            className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+            className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 relative"
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
+            <img
+              src="src/assets/img/IMA_Sello_de_Garantia.png"
+              alt="selloGarantia"
+              className="absolute w-52 h-52 rotate-[35deg] opacity-50 left-[70%] -z-10 bottom-5"
+            />
             <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
               Áreas de negocio
             </p>
@@ -123,30 +128,10 @@ const SecCardsInfo = () => {
         </div>
       </section>
       {/* Ventanas modales */}
-      {modalId === 1 && (
-        <Modal setModalId={setModalId} modalId={modalId}>
-          {/* Aquí va el contenido de la ventana modal 1 */}
-          {/* ... */}
-        </Modal>
-      )}
-      {modalId === 2 && (
-        <Modal setModalId={setModalId} modalId={modalId}>
-          {/* Aquí va el contenido de la ventana modal 2 */}
-          {/* ... */}
-        </Modal>
-      )}
-      {modalId === 3 && (
-        <Modal setModalId={setModalId} modalId={modalId}>
-          {/* Aquí va el contenido de la ventana modal 3 */}
-          {/* ... */}
-        </Modal>
-      )}
-      {modalId === 4 && (
-        <Modal setModalId={setModalId} modalId={modalId}>
-          {/* Aquí va el contenido de la ventana modal 4 */}
-          {/* ... */}
-        </Modal>
-      )}
+      {modalId === 1 && <Modal setModalId={setModalId} modalId={modalId} />}
+      {modalId === 2 && <Modal setModalId={setModalId} modalId={modalId} />}
+      {modalId === 3 && <Modal setModalId={setModalId} modalId={modalId} />}
+      {modalId === 4 && <Modal setModalId={setModalId} modalId={modalId} />}
     </>
   );
 };

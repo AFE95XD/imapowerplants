@@ -158,7 +158,7 @@ const SecContacto = () => {
                     </span>
                   </dd>
                 </dl>
-                <ul role="list" className="mt-8 flex space-x-12">
+                {/* <ul role="list" className="mt-8 flex space-x-12">
                   <li>
                     <a
                       className="text-indigo-200 hover:text-indigo-100"
@@ -201,7 +201,7 @@ const SecContacto = () => {
                       </svg>
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
 
               {/* Contact form */}

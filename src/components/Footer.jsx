@@ -16,9 +16,12 @@ const Footer = () => {
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-          En IMA Mechanical Engineers le ofrecemos solución a su Proyecto Bajo
-          la Modalidad Llave en Mano. Integramos todas las Ingenierías de
-          Proyecto.
+          IMA Mechanical Engineers es una Firma de Ingeniería comprometida con
+          la Excelencia. Para solicitar asistencia, contáctenos al siguiente
+          correo y números telefónicos:{" "}
+          <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-0.5 text-sm font-medium text-blue-800">
+            55-3717-1132
+          </span>
         </p>
       </div>
     </footer>

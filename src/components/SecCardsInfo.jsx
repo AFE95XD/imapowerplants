@@ -74,7 +74,7 @@ const SecCardsInfo = () => {
             <img
               src="src/assets/img/IMA_Sello_de_Garantia.png"
               alt="selloGarantia"
-              className="absolute w-52 h-52 rotate-[35deg] opacity-50 left-[70%] -z-10 bottom-5"
+              className="absolute w-48 h-48 rotate-[35deg] opacity-50 left-[84%] -z-10 bottom-5"
             />
             <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
               Áreas de negocio

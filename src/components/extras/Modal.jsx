@@ -166,11 +166,11 @@ const Modal = ({ setModalId, modalId }) => {
                                 >
                                   {info.titulo}
                                 </Dialog.Title>
-                                <div className="mt-2">
+                                {/* <div className="mt-2">
                                   <p className="text-sm text-gray-500">
                                     {info.descipcion}
                                   </p>
-                                </div>
+                                </div> */}
                               </div>
                             ))}
                         </div>

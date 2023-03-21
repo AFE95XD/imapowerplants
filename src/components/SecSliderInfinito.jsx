@@ -30,17 +30,37 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
+                src="src/assets/img/sliderInfinite/plami.png"
+                height="100"
+                width="250"
+                className="md:pt-8 md:pl-3"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
                 src="src/assets/img/sliderInfinite/ipn-1.png"
                 height="100"
                 width="250"
                 alt=""
               />
             </div>
+
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/man.png"
+                src="src/assets/img/sliderInfinite/mwm.png"
                 height="100"
                 width="250"
+                alt=""
+              />
+            </div>
+
+            <div className="slide">
+              <img
+                src="src/assets/img/sliderInfinite/conrad.png"
+                height="100"
+                width="150"
+                className="sm:ml-10"
                 alt=""
               />
             </div>
@@ -52,39 +72,18 @@ const SecSliderInfinito = () => {
                 alt=""
               />
             </div>
-            <div className="slide">
-              <img
-                src="src/assets/img/sliderInfinite/mwm.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
+
             <div className="slide">
               <img
                 src="src/assets/img/sliderInfinite/prodiel-1.png"
                 height="100"
                 width="250"
+                className="sm:pl-8 sm:pr-2 sm:pt-2"
                 alt=""
               />
             </div>
-            <div className="slide">
-              <img
-                src="src/assets/img/sliderInfinite/rr.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="src/assets/img/sliderInfinite/thermax.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            {/* DOBLE */}
+
+            {/* SEGUNDA ILERA */}
             <div className="slide">
               <img
                 src="src/assets/img/sliderInfinite/flagasa-1.png"
@@ -95,17 +94,37 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
+                src="src/assets/img/sliderInfinite/plami.png"
+                height="100"
+                width="250"
+                className="md:pt-8 md:pl-3"
+                alt=""
+              />
+            </div>
+            <div className="slide">
+              <img
                 src="src/assets/img/sliderInfinite/ipn-1.png"
                 height="100"
                 width="250"
                 alt=""
               />
             </div>
+
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/man.png"
+                src="src/assets/img/sliderInfinite/mwm.png"
                 height="100"
                 width="250"
+                alt=""
+              />
+            </div>
+
+            <div className="slide">
+              <img
+                src="src/assets/img/sliderInfinite/conrad.png"
+                height="100"
+                width="150"
+                className="sm:ml-10"
                 alt=""
               />
             </div>
@@ -117,35 +136,13 @@ const SecSliderInfinito = () => {
                 alt=""
               />
             </div>
-            <div className="slide">
-              <img
-                src="src/assets/img/sliderInfinite/mwm.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
+
             <div className="slide">
               <img
                 src="src/assets/img/sliderInfinite/prodiel-1.png"
                 height="100"
                 width="250"
-                alt=""
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="src/assets/img/sliderInfinite/rr.png"
-                height="100"
-                width="250"
-                alt=""
-              />
-            </div>
-            <div className="slide">
-              <img
-                src="src/assets/img/sliderInfinite/thermax.png"
-                height="100"
-                width="250"
+                className="sm:pl-8 sm:pr-2 sm:pt-2"
                 alt=""
               />
             </div>

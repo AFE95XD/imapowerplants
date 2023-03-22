@@ -1,27 +1,44 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const SecContacto = () => {
-  // const form = useRef();
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [mensaje, setMensaje] = useState("");
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if ([nombre, email, telefono, mensaje].includes("")) {
+      console.log("alerta todos los campos son obligatorios");
+    } else {
+      sendEmail(e);
+    }
+  };
 
-  //   emailjs
-  //     .sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       form.current,
-  //       "YOUR_PUBLIC_KEY"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("llave_del_servicio", "template_ID", form.current, "PUBLIK_KEY")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setNombre("");
+    setEmail("");
+    setTelefono("");
+    setMensaje("");
+    form.current.reset();
+  };
+  const revealRef = useRef(null);
 
   return (
     <>
@@ -34,10 +51,10 @@ const SecContacto = () => {
             data-aos-duration="1500"
           >
             <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
-              Contactanos
+              ¡Contactanos!
             </p>
             <h2 className="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-[#1b1a1a] sm:text-4xl md:mx-auto font-barlow">
-              Nuestro compromiso es asesorar oportunamente.
+              Estamos para servirle
             </h2>
           </div>
 
@@ -151,13 +168,8 @@ const SecContacto = () => {
                 <h3 className="text-lg font-medium text-white">
                   Información de contacto
                 </h3>
-                <p className="mt-6 max-w-3xl text-base text-indigo-50">
-                  Estamos listos para conocer los detalles del proyecto que
-                  tenga en mente. Puede enviarnos un correo o un mensaje directo
-                  rellenado el formulario de contacto.
-                </p>
                 <dl className="mt-8 space-y-6">
-                  <dt>
+                  {/* <dt>
                     <span className="sr-only">Número de teléfono</span>
                   </dt>
                   <dd className="flex text-base text-indigo-50">
@@ -166,7 +178,7 @@ const SecContacto = () => {
                       aria-hidden="true"
                     />
                     <span className="ml-3">(+52 1) 55-3717-1132</span>
-                  </dd>
+                  </dd> */}
                   <dt>
                     <span className="sr-only">Email</span>
                   </dt>
@@ -232,13 +244,14 @@ const SecContacto = () => {
                   Envíanos un mensaje
                 </h3>
                 <form
-                  action="#"
-                  method="POST"
+                  ref={form}
+                  onSubmit={(e) => handleSubmit(e)}
                   className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 >
+                  {/* INPUT DEL NOMBRE */}
                   <div>
                     <label
-                      htmlFor="first-name"
+                      htmlFor="user_name"
                       className="block text-sm font-medium text-gray-900"
                     >
                       Nombre (s)
@@ -246,89 +259,59 @@ const SecContacto = () => {
                     <div className="mt-1">
                       <input
                         type="text"
-                        name="first-name"
-                        id="first-name"
+                        id="user_name"
+                        name="user_name"
                         autoComplete="given-name"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
+                        value={nombre}
+                        onChange={(e) => setNombre(e.target.value)}
                       />
                     </div>
                   </div>
+                  {/* INPUT DEL EMAIL */}
                   <div>
                     <label
-                      htmlFor="last-name"
-                      className="block text-sm font-medium text-gray-900"
-                    >
-                      Apellidos
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        name="last-name"
-                        id="last-name"
-                        autoComplete="family-name"
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
+                      htmlFor="user-email"
                       className="block text-sm font-medium text-gray-900"
                     >
                       Email
                     </label>
                     <div className="mt-1">
                       <input
-                        id="email"
-                        name="email"
                         type="email"
+                        id="user_email"
+                        name="user_email"
                         autoComplete="email"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                   </div>
+                  {/* INPUT DEL TELEFONO */}
                   <div>
                     <div className="flex justify-between">
                       <label
-                        htmlFor="phone"
+                        htmlFor="user_phone"
                         className="block text-sm font-medium text-gray-900"
                       >
                         Teléfono
                       </label>
-                      <span
-                        id="phone-optional"
-                        className="text-sm text-gray-500"
-                      >
-                        Opcional
-                      </span>
                     </div>
                     <div className="mt-1">
                       <input
                         type="text"
-                        name="phone"
-                        id="phone"
+                        id="user_phone"
+                        name="user_phone"
                         autoComplete="tel"
                         className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                         aria-describedby="phone-optional"
+                        value={telefono}
+                        onChange={(e) => setTelefono(e.target.value)}
                       />
                     </div>
                   </div>
-                  {/* <div className="sm:col-span-2">
-                    <label
-                      htmlFor="subject"
-                      className="block text-sm font-medium text-gray-900"
-                    >
-                      
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        name="subject"
-                        id="subject"
-                        className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                      />
-                    </div>
-                  </div> */}
+                  {/* TEXT AREA DEL MENSAJE */}
                   <div className="sm:col-span-2">
                     <div className="flex justify-between">
                       <label
@@ -348,13 +331,16 @@ const SecContacto = () => {
                         rows={4}
                         className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-[#0000ff] focus:ring-[#0000ff]"
                         aria-describedby="message-max"
-                        defaultValue={""}
+                        value={mensaje}
+                        onChange={(e) => setMensaje(e.target.value)}
                       />
                     </div>
                   </div>
+                  {/* BOTON AL ENVIAR EL FORMULARIO */}
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
+                      value="Send"
                       className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[#0000ff] focus:outline-none focus:ring-2 focus:ring-[#0000ff] focus:ring-offset-2 sm:w-auto"
                     >
                       Enviar

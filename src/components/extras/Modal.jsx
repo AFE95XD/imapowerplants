@@ -6,88 +6,63 @@ const informacion = [
   // ingenieria:
   [
     {
-      titulo:
-        "Ingeniería Básica de Proceso, Mécanica, Eléctrica, Civil y de Control",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Estudios de Código de Red",
-      descipcion: "Lorem ipsum dolor sit amet consectetur.",
-    },
-    {
-      titulo: "Simulación de Procesos Industriales con AVENA Pro 2",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Estudios de Corto Circuito y Coordinación de Protecciones",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
+      titulo: "IMA Mechanical Engineers le ofrece:",
+      imagen: "src/assets/img/cards/modal_ingenieria.jpg",
+      contenido: [
+        {
+          descripcion:
+            "Ingeniería de Proceso, Mecánica, Eléctrica y de Control.",
+        },
+        {
+          descripcion: "Simulación de Procesos Industriales con AVEVA Pro II.",
+        },
+        { descripcion: "Diseño de Maquinaría a la Medida." },
+        {
+          descripcion:
+            "Estudios de Código de Red y Estudios Eléctricos de Potencia.",
+        },
+        {
+          descripcion:
+            "Unidad Verificadora de Instalaciones Eléctricas y Unidad de Inspección.",
+        },
+      ],
     },
   ],
   // energia:
   [
     {
-      titulo: "Plantas de Cogeneración",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Plantas Fotovoltaicas",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Plantas Solares Térmicas",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Plantas de Energia de Respaldo",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
+      titulo: "IMA Mechanical Engineers le ofrece:",
+      imagen: "src/assets/img/cards/modal_energia.jpg",
+      contenido: [
+        { descripcion: "Plantas de Cogeneración." },
+        { descripcion: "Plantas de Generación Fotovoltaicas." },
+        { descripcion: "Plantas de Generación a Diésel." },
+      ],
     },
   ],
   // industriales:
   [
     {
-      titulo: "Plantas de Alimentos",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Plantas de Proceso",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Plantas Solares Papeleras",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
+      titulo: "IMA Mechanical Engineers le ofrece:",
+      imagen: "src/assets/img/cards/modal_plantas_industriales.jpg",
+      contenido: [
+        { descripcion: "Plantas industriales de Proceso." },
+        { descripcion: "Automatización de Procesos Industriales." },
+        { descripcion: "Repotenciación de Plantas Industriales." },
+      ],
     },
   ],
   // mantenimiento:
   [
     {
-      titulo: "PSubestaciones Eléctrias",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Calderas de vapor",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Motores de Combustión",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
-    },
-    {
-      titulo: "Fabricación de Maquinaría",
-      descipcion:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea?",
+      titulo: "IMA Mechanical Engineers le ofrece:",
+      imagen: "src/assets/img/cards/modal_mantenimiento.jpg",
+      contenido: [
+        { descripcion: "Generadores de Vapor." },
+        { descripcion: "Plantas de Emergencia." },
+        { descripcion: "Subestaciones Eléctricas." },
+        { descripcion: "Motores a Gas Natural." },
+      ],
     },
   ],
 ];
@@ -101,7 +76,7 @@ const Modal = ({ setModalId, modalId }) => {
   let x = [];
   x = informacion[modalId - 1];
 
-  console.log(informacion);
+  // console.log(informacion);
 
   const generarId = () => {
     const random = Math.random().toString(36).substring(2);
@@ -135,7 +110,7 @@ const Modal = ({ setModalId, modalId }) => {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative h-screen transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-3/4 sm:p-6">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:pr-16 sm:p-6">
                   <div className="absolute top-0 right-0 hidden pt-4 pr-4 sm:block">
                     <button
                       type="button"
@@ -146,34 +121,46 @@ const Modal = ({ setModalId, modalId }) => {
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
-                  <div className="sm:flex sm:items-start">
+                  <div className="sm:flex sm:items-center">
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <div className="flex flex-wrap">
-                        <div className="h-96 w-60 mr-11 lg:text-start sm:">
-                          <img
-                            src="src/assets/img/Fotografía IMA Mechanical.jpg"
-                            alt="imgDif"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div>
-                          {x &&
-                            x.map((info) => (
-                              <div key={generarId()}>
-                                <Dialog.Title
-                                  as="h3"
-                                  className="text-base font-semibold leading-6 text-gray-900"
-                                >
-                                  {info.titulo}
-                                </Dialog.Title>
-                                {/* <div className="mt-2">
-                                  <p className="text-sm text-gray-500">
-                                    {info.descipcion}
-                                  </p>
-                                </div> */}
+                        {x &&
+                          x.map((info) => (
+                            <div
+                              key={generarId()}
+                              className="flex  flex-col items-center"
+                            >
+                              <div className="h-96 w-60 pb-4">
+                                <img
+                                  src={info.imagen}
+                                  alt="imgDif"
+                                  className="w-full h-full object-cover"
+                                />
                               </div>
-                            ))}
-                        </div>
+                              <div>
+                                <div>
+                                  <Dialog.Title
+                                    as="h3"
+                                    className="font-roboto text-base font-normal leading-6 text-gray-900"
+                                  >
+                                    {info.titulo}
+                                  </Dialog.Title>
+                                  <div className="mt-2">
+                                    <ul>
+                                      {info.contenido.map((lista) => (
+                                        <li
+                                          key={generarId()}
+                                          className="list-disc text-sm text-gray-500"
+                                        >
+                                          {lista.descripcion}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
                       </div>
                     </div>
                   </div>

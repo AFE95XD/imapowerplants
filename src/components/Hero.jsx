@@ -7,6 +7,7 @@ const Hero = () => {
   return (
     <>
       <Swiper
+        id="sec0"
         tag="section"
         modules={[Navigation, Autoplay]}
         navigation={true}

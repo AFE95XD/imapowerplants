@@ -23,7 +23,12 @@ const SecContacto = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("llave_del_servicio", "template_ID", form.current, "PUBLIK_KEY")
+      .sendForm(
+        "service_co1r81p",
+        "template_mwyyko2",
+        form.current,
+        "aLXx7zJ1pfVrZnvD4"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -187,9 +192,7 @@ const SecContacto = () => {
                       className="h-6 w-6 flex-shrink-0 text-indigo-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">
-                      mechanical.engineers@imapowerplants.com
-                    </span>
+                    <span className="ml-3">contacto@imapowerplants.com</span>
                   </dd>
                 </dl>
                 {/* <ul role="list" className="mt-8 flex space-x-12">
@@ -271,7 +274,7 @@ const SecContacto = () => {
                   {/* INPUT DEL EMAIL */}
                   <div>
                     <label
-                      htmlFor="user-email"
+                      htmlFor="user_email"
                       className="block text-sm font-medium text-gray-900"
                     >
                       Email

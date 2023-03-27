@@ -61,9 +61,7 @@ const Header = () => {
               className="h-6 w-6 flex-shrink-0"
               aria-hidden="true"
             />
-            <span className="ml-3">
-              mechanical.engineers@imapowerplants.com
-            </span>
+            <span className="ml-3">contacto@imapowerplants.com</span>
           </p>
         </div>
       </div>
@@ -148,9 +146,7 @@ const Header = () => {
               className="h-8 w-8 flex-shrink-0"
               aria-hidden="true"
             />
-            <span className="pl-3">
-              mechanical.engineers@imapowerplants.com
-            </span>
+            <span className="pl-3">contacto@imapowerplants.com</span>
           </p>
         </div>
       )}

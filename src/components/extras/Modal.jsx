@@ -7,7 +7,7 @@ const informacion = [
   [
     {
       titulo: "IMA Mechanical Engineers le ofrece:",
-      imagen: "src/assets/img/cards/modal_ingenieria.jpg",
+      imagen: "/assets/img/cards/modal_ingenieria.jpg",
       contenido: [
         {
           descripcion:
@@ -32,7 +32,7 @@ const informacion = [
   [
     {
       titulo: "IMA Mechanical Engineers le ofrece:",
-      imagen: "src/assets/img/cards/modal_energia.jpg",
+      imagen: "/assets/img/cards/modal_energia.jpg",
       contenido: [
         { descripcion: "Plantas de Cogeneración." },
         { descripcion: "Plantas de Generación Fotovoltaicas." },
@@ -44,7 +44,7 @@ const informacion = [
   [
     {
       titulo: "IMA Mechanical Engineers le ofrece:",
-      imagen: "src/assets/img/cards/modal_plantas_industriales.jpg",
+      imagen: "/assets/img/cards/modal_plantas_industriales.jpg",
       contenido: [
         { descripcion: "Plantas industriales de Proceso." },
         { descripcion: "Automatización de Procesos Industriales." },
@@ -56,7 +56,7 @@ const informacion = [
   [
     {
       titulo: "IMA Mechanical Engineers le ofrece:",
-      imagen: "src/assets/img/cards/modal_mantenimiento.jpg",
+      imagen: "/assets/img/cards/modal_mantenimiento.jpg",
       contenido: [
         { descripcion: "Generadores de Vapor." },
         { descripcion: "Plantas de Emergencia." },

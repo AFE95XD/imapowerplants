@@ -22,7 +22,7 @@ const SecSliderInfinito = () => {
           <div className="slide-track">
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/flagasa-1.png"
+                src="/assets/img/sliderInfinite/flagasa-1.png"
                 height="100"
                 width="250"
                 alt=""
@@ -30,7 +30,7 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/plami.png"
+                src="/assets/img/sliderInfinite/plami.png"
                 height="100"
                 width="250"
                 className="md:pt-8 md:pl-3"
@@ -39,7 +39,7 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/ipn-1.png"
+                src="/assets/img/sliderInfinite/ipn-1.png"
                 height="100"
                 width="250"
                 alt=""
@@ -48,7 +48,7 @@ const SecSliderInfinito = () => {
 
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/mwm.png"
+                src="/assets/img/sliderInfinite/mwm.png"
                 height="100"
                 width="250"
                 alt=""
@@ -57,7 +57,7 @@ const SecSliderInfinito = () => {
 
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/conrad.png"
+                src="/assets/img/sliderInfinite/conrad.png"
                 height="100"
                 width="150"
                 className="sm:ml-10"
@@ -66,7 +66,7 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/martin.png"
+                src="/assets/img/sliderInfinite/martin.png"
                 height="100"
                 width="250"
                 alt=""
@@ -75,7 +75,7 @@ const SecSliderInfinito = () => {
 
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/prodiel-1.png"
+                src="/assets/img/sliderInfinite/prodiel-1.png"
                 height="100"
                 width="250"
                 className="sm:pl-8 sm:pr-2 sm:pt-2"
@@ -86,7 +86,7 @@ const SecSliderInfinito = () => {
             {/* SEGUNDA ILERA */}
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/flagasa-1.png"
+                src="/assets/img/sliderInfinite/flagasa-1.png"
                 height="100"
                 width="250"
                 alt=""
@@ -94,7 +94,7 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/plami.png"
+                src="/assets/img/sliderInfinite/plami.png"
                 height="100"
                 width="250"
                 className="md:pt-8 md:pl-3"
@@ -103,7 +103,7 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/ipn-1.png"
+                src="/assets/img/sliderInfinite/ipn-1.png"
                 height="100"
                 width="250"
                 alt=""
@@ -112,7 +112,7 @@ const SecSliderInfinito = () => {
 
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/mwm.png"
+                src="/assets/img/sliderInfinite/mwm.png"
                 height="100"
                 width="250"
                 alt=""
@@ -121,7 +121,7 @@ const SecSliderInfinito = () => {
 
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/conrad.png"
+                src="/assets/img/sliderInfinite/conrad.png"
                 height="100"
                 width="150"
                 className="sm:ml-10"
@@ -130,7 +130,7 @@ const SecSliderInfinito = () => {
             </div>
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/martin.png"
+                src="/assets/img/sliderInfinite/martin.png"
                 height="100"
                 width="250"
                 alt=""
@@ -139,7 +139,7 @@ const SecSliderInfinito = () => {
 
             <div className="slide">
               <img
-                src="src/assets/img/sliderInfinite/prodiel-1.png"
+                src="/assets/img/sliderInfinite/prodiel-1.png"
                 height="100"
                 width="250"
                 className="sm:pl-8 sm:pr-2 sm:pt-2"

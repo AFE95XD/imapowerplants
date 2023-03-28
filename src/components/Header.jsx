@@ -70,8 +70,8 @@ const Header = () => {
             // src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
             src={
               isMenuOpen
-                ? "src/assets/img/logo_IMA2.png"
-                : "src/assets/img/logo_IMA1.png"
+                ? "/assets/img/logo_IMA2.png"
+                : "/assets/img/logo_IMA1.png"
             }
             alt="IMA_logo"
           />

@@ -14,7 +14,7 @@ const cards = [
     titulo: "Ingeniería",
     descripcion:
       "Proyectos de cogeneración a base de motor de combustión interna, turbinas de gas y vapor. Garantizamos éxito y rendimiento energético.",
-    imagen: "src/assets/img/cards/ingenieria.jpg",
+    imagen: "/assets/img/cards/ingenieria.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const cards = [
     titulo: "Plantas de Energía",
     descripcion:
       "Diseñamos, Proyectamos y Construimos Maquinaria Especializada para sus Procesos Productivos, como lo pueden ser Tolvas, Tanques, Calandretas, Recipientes a presión, entre los principales.",
-    imagen: "src/assets/img/cards/energia.jpg",
+    imagen: "/assets/img/cards/Energia.jpg",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const cards = [
     titulo: "Plantas Industriales",
     descripcion:
       "Realizamos Estudios Eléctricos Especializados, Diagnósticos Energéticos e Ingeniería Básica de Proyectos Industriales.",
-    imagen: "src/assets/img/cards/plantasIndustriales.jpg",
+    imagen: "/assets/img/cards/plantasIndustriales.jpg",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const cards = [
     titulo: "Mantenimiento Industrial",
     descripcion:
       "Realizamos Estudios Eléctricos Especializados, Diagnósticos Energéticos e Ingeniería Básica de Proyectos Industriales.",
-    imagen: "src/assets/img/cards/mantenimiento.jpg",
+    imagen: "/assets/img/cards/mantenimiento.jpg",
   },
 ];
 
@@ -72,7 +72,7 @@ const SecCardsInfo = () => {
             data-aos-duration="1500"
           >
             <img
-              src="src/assets/img/IMA_Sello_de_Garantia.png"
+              src="/assets/img/IMA_Sello_de_Garantia.png"
               alt="selloGarantia"
               className="absolute w-48 h-48 rotate-[35deg] opacity-50 left-[84%] -z-10 bottom-5"
             />

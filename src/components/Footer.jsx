@@ -7,11 +7,12 @@ const Footer = () => {
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex justify-center text-teal-600">
+      <div className="flex flex-col items-center mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="w-52 h-14">
           <img
-            src="https://imapowerplants.com/wp-content/uploads/2021/09/IMA_logo.png"
+            src="/assets/img/logo_IMA2.png"
             alt="logoIMA"
+            className="w-full h-full object-contain"
           />
         </div>
 

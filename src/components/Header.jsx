@@ -99,7 +99,9 @@ const Header = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 rounded-md text-white bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-[#0000ff7c] hover:to-[#0000FF7c]"
+            className={`h-8 w-8 rounded-md ${
+              isMenuOpen ? "text-[#0000FF]" : "text-white"
+            } bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-[#0000ff7c] hover:to-[#0000FF7c]`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -124,6 +126,7 @@ const Header = () => {
                 isMenuOpen ? navEstilos1 : navEstilos1
               }`}
               key={link.name}
+              onClick={() => setIsOpen(false)}
             >
               {link.name}
             </a>

@@ -61,7 +61,7 @@ const SecCardsInfo = () => {
   return (
     <>
       <section
-        className="bg-contain bg-center h-auto bg-[url('src/assets/img/map.png')]"
+        className="bg-contain bg-center h-auto bg-[url('/assets/img/map.png')] overflow-hidden"
         id="sec1"
       >
         <div className="mx-auto max-w-7xl px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8 text-center py-32">
@@ -74,7 +74,7 @@ const SecCardsInfo = () => {
             <img
               src="/assets/img/IMA_Sello_de_Garantia.png"
               alt="selloGarantia"
-              className="absolute w-48 h-48 rotate-[35deg] opacity-50 left-[84%] -z-10 bottom-5"
+              className="absolute w-48 h-48 rotate-[35deg] opacity-50 lg:left-[84%] left-[60%] -z-10 bottom-28 lg:bottom-5"
             />
             <p className="inline-block px-3 py-px mb-4 tracking-wider uppercase rounded-full bg-teal-accent-400 font-roboto text-lg font-bold text-[#0000FF]">
               Áreas de negocio

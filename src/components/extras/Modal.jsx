@@ -46,7 +46,7 @@ const informacion = [
       titulo: "IMA Mechanical Engineers le ofrece:",
       imagen: "/assets/img/cards/modal_plantas_industriales.jpg",
       contenido: [
-        { descripcion: "Plantas industriales de Proceso." },
+        { descripcion: "Plantas Industriales de Proceso." },
         { descripcion: "Automatización de Procesos Industriales." },
         { descripcion: "Repotenciación de Plantas Industriales." },
       ],

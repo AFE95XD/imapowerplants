@@ -44,10 +44,6 @@ const Header = () => {
       <div className={`${isMenuOpen ? "bg-[#0000FF]" : ""}`}>
         <div className="container mx-auto gap-4 items-center py-1 px-5 hidden md:flex">
           <p className="font-medium text-white flex">
-            <span className="w-6 h-6">{<PhoneIcon />}</span>
-            <span className="pl-3">(+52 1) 55-3717-1132</span>
-          </p>
-          <p className="font-medium text-white flex">
             <EnvelopeIcon
               className="h-6 w-6 flex-shrink-0"
               aria-hidden="true"
@@ -131,10 +127,7 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <p className="px-3 py-2 rounded-md text-white bg-[#0000FF] mt-5 flex items-center justify-center text-center">
-            <span className="w-8 h-8">{<PhoneIcon />}</span>
-            <span className="pl-3">(+52 1) 55-3717-1132</span>
-          </p>
+
           <p className="px-3 py-2 rounded-md text-white bg-[#0000FF] mt-5 flex items-center justify-center text-center lowercase">
             <EnvelopeIcon
               className="h-8 w-8 flex-shrink-0"

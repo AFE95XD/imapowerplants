@@ -16,10 +16,11 @@ const Footer = () => {
           />
         </div>
 
-        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+        <p className="mx-auto mt-6 max-w-lg text-center leading-relaxed text-gray-500">
           IMA Mechanical Engineers es una Firma de Ingeniería comprometida con
           la Excelencia. Para solicitar asistencia, contáctenos al siguiente
-          correo y números telefónicos:
+          correo:{" "}
+          <span className="text-[#0000FF]">contacto@imapowerplants.com</span>
         </p>
       </div>
     </footer>

@@ -83,8 +83,7 @@ const Hero = () => {
                 Mantenimiento
               </h2>
               <p className="font-roboto font-normal text-white text-sm md:text-base md:font-bold w-3/5 tracking-[0.3px]">
-                Brindamos Mantenimiento a Sub Estaciones Eléctricas, Plantas de
-                Cogeneración y Planta Fotovoltaicas
+                Brindamos Mantenimiento a Plantas Fotovoltaicas
               </p>
             </div>
           </div>
